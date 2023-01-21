@@ -1,2 +1,3 @@
 FROM ubuntu
-RUN echo "Hello World" > /tmp/testfile
+RUN apt-get update && apt-get install -y apache2
+COPY . /tmp
